@@ -543,14 +543,14 @@ def write_if_changed(path, content):
     print(f"wrote {path}")
 
 
-def update_readme_version(version):
+def update_readme_assets(version):
     readme = OUT.parent / "README.md"
     if not readme.exists():
         return
     text = readme.read_text(encoding="utf-8")
     updated = re.sub(
-        r"(assets/[A-Za-z0-9._-]+\.svg)(\?v=[0-9a-f]+)?",
-        lambda match: f"{match.group(1)}?v={version}",
+        r"assets/(?:[0-9a-f]+/)?(hero|stats|commit-heatmap|languages|contributors)-(light|dark)\.svg(?:\?v=[0-9a-f]+)?",
+        lambda match: f"assets/{version}/{match.group(1)}-{match.group(2)}.svg",
         text,
     )
     if updated == text:
@@ -615,13 +615,13 @@ def main():
             theme, contributions, avatars
         )
 
-    for name in sorted(generated):
-        write_if_changed(OUT / name, generated[name])
-
     version = hashlib.sha256(
         "".join(name + generated[name] for name in sorted(generated)).encode("utf-8")
     ).hexdigest()[:10]
-    update_readme_version(version)
+    version_dir = OUT / version
+    for name in sorted(generated):
+        write_if_changed(version_dir / name, generated[name])
+    update_readme_assets(version)
 
     print(f"Stats: {stats}")
     print(f"Languages: {dict(languages)}")
