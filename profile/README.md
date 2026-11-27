@@ -21,12 +21,11 @@
 </p>
 
 <p align="center">
-  <a href="#english">English</a> · <a href="#chinese">简体中文</a>
+  <a href="#english">English</a> · <a href="#简体中文">简体中文</a>
 </p>
 
 ---
 
-<a name="english"></a>
 ## English
 
 ### What we build
@@ -61,7 +60,6 @@ Requires JDK 25. See the [repository](https://github.com/tolimsuite/spissatus4j)
 
 ---
 
-<a name="chinese"></a>
 ## 简体中文
 
 ### 我们构建什么
