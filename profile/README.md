@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <img alt="TOLIM Technologies" src="assets/hero-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=14a6a7634c">
+    <img alt="TOLIM Technologies" src="assets/hero-light.svg?v=14a6a7634c">
   </picture>
 </p>
 
@@ -15,8 +15,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-    <img alt="TOLIM organization statistics" src="assets/stats-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg?v=14a6a7634c">
+    <img alt="TOLIM organization statistics" src="assets/stats-light.svg?v=14a6a7634c">
   </picture>
 </p>
 
@@ -24,8 +24,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/commit-heatmap-dark.svg">
-    <img alt="Commit activity across TOLIM repositories over the last 12 months" src="assets/commit-heatmap-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/commit-heatmap-dark.svg?v=14a6a7634c">
+    <img alt="Commit activity across TOLIM repositories over the last 12 months" src="assets/commit-heatmap-light.svg?v=14a6a7634c">
   </picture>
 </p>
 
@@ -33,8 +33,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
-    <img alt="Language distribution across TOLIM repositories" src="assets/languages-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg?v=14a6a7634c">
+    <img alt="Language distribution across TOLIM repositories" src="assets/languages-light.svg?v=14a6a7634c">
   </picture>
 </p>
 
@@ -42,8 +42,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/contributors-dark.svg">
-    <img alt="TOLIM contributors" src="assets/contributors-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contributors-dark.svg?v=14a6a7634c">
+    <img alt="TOLIM contributors" src="assets/contributors-light.svg?v=14a6a7634c">
   </picture>
 </p>
 

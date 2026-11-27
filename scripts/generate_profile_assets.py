@@ -2,10 +2,12 @@
 """Generate the TOLIM organization profile assets from GitHub data."""
 
 import base64
+import hashlib
 import html
 import json
 import math
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -541,6 +543,23 @@ def write_if_changed(path, content):
     print(f"wrote {path}")
 
 
+def update_readme_version(version):
+    readme = OUT.parent / "README.md"
+    if not readme.exists():
+        return
+    text = readme.read_text(encoding="utf-8")
+    updated = re.sub(
+        r"(assets/[A-Za-z0-9._-]+\.svg)(\?v=[0-9a-f]+)?",
+        lambda match: f"{match.group(1)}?v={version}",
+        text,
+    )
+    if updated == text:
+        print(f"unchanged {readme}")
+    else:
+        readme.write_text(updated, encoding="utf-8")
+        print(f"wrote {readme}")
+
+
 def main():
     if not TOKEN:
         print("GITHUB_TOKEN is required", file=sys.stderr)
@@ -586,19 +605,23 @@ def main():
         "contributors": len(contributions),
     }
 
+    generated = {}
     for theme_name, theme in THEMES.items():
-        write_if_changed(OUT / f"hero-{theme_name}.svg", hero_svg(theme, org_avatar))
-        write_if_changed(OUT / f"stats-{theme_name}.svg", stats_svg(theme, stats))
-        write_if_changed(
-            OUT / f"commit-heatmap-{theme_name}.svg", heatmap_svg(counts, theme)
+        generated[f"hero-{theme_name}.svg"] = hero_svg(theme, org_avatar)
+        generated[f"stats-{theme_name}.svg"] = stats_svg(theme, stats)
+        generated[f"commit-heatmap-{theme_name}.svg"] = heatmap_svg(counts, theme)
+        generated[f"languages-{theme_name}.svg"] = language_svg(languages, theme)
+        generated[f"contributors-{theme_name}.svg"] = contributors_svg(
+            theme, contributions, avatars
         )
-        write_if_changed(
-            OUT / f"languages-{theme_name}.svg", language_svg(languages, theme)
-        )
-        write_if_changed(
-            OUT / f"contributors-{theme_name}.svg",
-            contributors_svg(theme, contributions, avatars),
-        )
+
+    for name in sorted(generated):
+        write_if_changed(OUT / name, generated[name])
+
+    version = hashlib.sha256(
+        "".join(name + generated[name] for name in sorted(generated)).encode("utf-8")
+    ).hexdigest()[:10]
+    update_readme_version(version)
 
     print(f"Stats: {stats}")
     print(f"Languages: {dict(languages)}")
