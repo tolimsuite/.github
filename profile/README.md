@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ef56ae952b/hero-dark.svg">
-    <img alt="TOLIM Technologies" src="assets/ef56ae952b/hero-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fdf16acf0b/hero-dark.svg">
+    <img alt="TOLIM Technologies" src="assets/fdf16acf0b/hero-light.svg">
   </picture>
 </p>
 
@@ -15,8 +15,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ef56ae952b/stats-dark.svg">
-    <img alt="TOLIM organization statistics" src="assets/ef56ae952b/stats-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fdf16acf0b/stats-dark.svg">
+    <img alt="TOLIM organization statistics" src="assets/fdf16acf0b/stats-light.svg">
   </picture>
 </p>
 
@@ -24,8 +24,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ef56ae952b/commit-heatmap-dark.svg">
-    <img alt="Commit activity across TOLIM repositories over the last 12 months" src="assets/ef56ae952b/commit-heatmap-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fdf16acf0b/commit-heatmap-dark.svg">
+    <img alt="Commit activity across TOLIM repositories over the last 12 months" src="assets/fdf16acf0b/commit-heatmap-light.svg">
   </picture>
 </p>
 
@@ -33,8 +33,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ef56ae952b/languages-dark.svg">
-    <img alt="Language distribution across TOLIM repositories" src="assets/ef56ae952b/languages-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fdf16acf0b/languages-dark.svg">
+    <img alt="Language distribution across TOLIM repositories" src="assets/fdf16acf0b/languages-light.svg">
   </picture>
 </p>
 
@@ -42,8 +42,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ef56ae952b/contributors-dark.svg">
-    <img alt="TOLIM contributors" src="assets/ef56ae952b/contributors-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fdf16acf0b/contributors-dark.svg">
+    <img alt="TOLIM contributors" src="assets/fdf16acf0b/contributors-light.svg">
   </picture>
 </p>
 
