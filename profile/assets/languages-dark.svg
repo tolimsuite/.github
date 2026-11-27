@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="96" viewBox="0 0 760 96" role="img" aria-label="Language distribution across TOLIM repositories">
+<defs><clipPath id="bar"><rect x="12" y="10" width="736" height="18" rx="5"/></clipPath></defs>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;}</style>
+<rect x="12.00" y="10" width="736.00" height="18" fill="#b07219" clip-path="url(#bar)"><title>Java: 100.0%</title></rect>
+<rect x="12.0" y="43" width="8" height="8" rx="2" fill="#b07219"></rect>
+<text x="25.0" y="50" fill="#c9d1d9" font-size="11">Java <tspan fill="#8b949e">100.0%</tspan></text>
+</svg>

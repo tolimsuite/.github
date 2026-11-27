@@ -20,6 +20,26 @@
 
 ---
 
+## Activity · 活动
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/commit-heatmap-dark.svg">
+    <img alt="Commit activity across TOLIM repositories over the last 12 months" src="assets/commit-heatmap-light.svg">
+  </picture>
+</p>
+
+## Languages · 语言
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+    <img alt="Language distribution across TOLIM repositories" src="assets/languages-light.svg">
+  </picture>
+</p>
+
+---
+
 ## English
 
 ### About Us
@@ -46,11 +66,10 @@ A Java 25 cryptographic engineering library covering key lifecycle, authenticate
 
 - [Repository](https://github.com/tolimsuite/spissatus4j)
 - [Maven Central](https://central.sonatype.com/search?q=cn.tolim)
-- [GitHub Packages](https://github.com/orgs/tolimsuite/packages?repo_name=spissatus4j) (authenticated access)
 
 More projects are in development.
 
-**[Explore all repositories](https://github.com/orgs/tolimsuite/repositories)**
+**[Browse repositories](https://github.com/orgs/tolimsuite/repositories)** · **[Browse packages](https://github.com/orgs/tolimsuite/packages)**
 
 ### Join Us
 
@@ -84,11 +103,10 @@ TOLIM Technologies 是一家软件工程公司。我们的工作从应用密码�
 
 - [仓库](https://github.com/tolimsuite/spissatus4j)
 - [Maven Central](https://central.sonatype.com/search?q=cn.tolim)
-- [GitHub Packages](https://github.com/orgs/tolimsuite/packages?repo_name=spissatus4j)（需要认证）
 
 更多项目正在开发中。
 
-**[浏览全部仓库](https://github.com/orgs/tolimsuite/repositories)**
+**[浏览仓库](https://github.com/orgs/tolimsuite/repositories)** · **[浏览包](https://github.com/orgs/tolimsuite/packages)**
 
 ### 加入我们
 
